@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="main_heading" >Registration Form</h1>
+    <div class="main_page">
+        <form class="form_tag">
+            <div class="first_div">
+                <br>
+                Full Name:
+                <input type="text" placeholder="Enter Your Full Name..." id="name_input">
+                <br><br>
+                Father's Name:
+                <input type="text" id="fName_input" placeholder="Enter Your Father's Name..." />
+                <br><br>
+                Gender:
+                <input id="gender_input_male" class="option-input radio" type="radio" name="gender" value="M" /> Male
+                <input id="gender_input_female" class="option-input radio" type="radio" name="gender" value="F" />
+                Female
+                <br><br>
+                CNIC:
+                <input type="text" placeholder="XXXXX-XXXXXXX-X" id="cnic_input">
+                <br><br>
+                Age:
+                <input id="age_input" placeholder="Type Your Age..." type="number" />
+                <br><br>
+                Date of Birth:
+                <input id="dob_input" type="date" />
+                <br><br>
+                Phone number:
+                <input id="phone_input" type="number" placeholder="03xx-xxxxxxx" />
+                <br><br>
+                Nationality: <br>
+                <input id="pak_nat" class="option-input radio" type="radio" name="con" value="Pak" /> Pakistani
+                <input id="oth_nat" class="option-input radio" type="radio" name="con" value="Oth" /> Other
+                <br><br>
+                City: <br>
+                <input id="city_khi" class="option-input radio" type="radio" name="city" value="khi" />Karachi
+                <input id="city_lhr" class="option-input radio" type="radio" name="city" value="lhe" />Lahore
+                <input id="city_isl" class="option-input radio" type="radio" name="city" value="isl" />Islamabad
+                <input id="city_oth" class="option-input radio" type="radio" name="city" value="oth" />Others
+                <br><br>
+            </div>
+            <div class="second_div">
+                Resedential Address:
+                <input id="address_input" name="address" placeholder="Enter your full address......." />
+                <br><br>
+                Last Qualification: <br>
+                <input id="qual_middle" class="option-input radio" type="radio" name="lq" value="Mi" />Middle
+                <input id="qual_matric" class="option-input radio" type="radio" name="lq" value="Ma" />Matric
+                <input id="qual_inter" class="option-input radio" type="radio" name="lq" value="in" />Intermediate
+                <input id="qual_dae" class="option-input radio" type="radio" name="lq" value="dae" />DAE
+                <input id="qual_grad" class="option-input radio" type="radio" name="lq" value="Gr" />Graduation
+                <input id="qual_master" class="option-input radio" type="radio" name="lq" value="Ma" />Master
+                <input id="qual_phd" class="option-input radio" type="radio" name="lq" value="phd" />PHD
+                <br><br>
+                Select Course: <br>
+                <input id="course_wam" class="option-input radio" type="radio" name="course" value="wam" /> Web and
+                Mobile Application
+                <input id="course_aib" class="option-input radio" type="radio" name="course" value="aib" /> AI and
+                Blockchain
+                <input id="course_cco" class="option-input radio" type="radio" name="course" value="cco" /> CCO
+                <input id="course_cca" class="option-input radio" type="radio" name="course" value="cca" /> CCA
+                <input id="course_graphic" class="option-input radio" type="radio" name="course" value="gdva" /> Graphic
+                Designing and Video
+                Animation
+                <br><br>
+                Upload Your Recent Picture
+                <input id="pic_input" type="file" name="pic" /> <br />
+                <br><br>
+                Email:
+                <input id="email_input" type="email" name="email" placeholder="example@domain.com" />
+                <br><br><br>
+            </div>
+
+        </form>
+        <button class="submit_button" onclick="formValidation()">Submit</button> <br>
+    </div>
+    <button class="admin_button"><a class="admin_link" href="admin/admin.html">Login as Admin</a></button>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

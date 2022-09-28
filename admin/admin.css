@@ -1,0 +1,82 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+
+.data_table {
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    background-color: #3C1A5B;
+}
+
+.sign_in {
+    background-color: #FFF748;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-size: 20px;
+    margin-bottom: 2%;
+    height: 50vh;
+}
+
+input {
+    box-shadow: 2px 2px 15px 0 black;
+    border: none;
+    width: 100%;
+    height: 30px;
+}
+
+.admin_form {
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 10%;
+}
+
+.sign_button {
+    width: 50%;
+    height: 50px;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    background-color: #3C1A5B;
+    border: none;
+    font-size: 20px;
+}
+
+.data_table {
+    background-color: #FFF748;
+}
+
+.btn {
+    background-color: #3C1A5B;
+    border: none;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.home_button {
+    width: 30%;
+    height: 50px;
+    margin-left: 35%;
+    background-color: #FFF748;
+    border: none;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.home_link {
+    text-decoration: none;
+    color: black;
+}
