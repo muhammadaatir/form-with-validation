@@ -22,46 +22,50 @@ body {
     display: block  ;
 } */
 .main_heading {
-    font-size: 60px;
-    color: #FFF748;
-    text-shadow: -2px -2px 5px #000000;
+    font-size: 40px;
+    /* color: #FFF748; */
+    /* text-shadow: -2px -2px 5px #000000; */
     margin: 0 auto;
-    width: 30%;
+    text-align: center;
 }
 
 .main_page {
-    box-shadow: 2px 2px 15px 0 #e5e5e5;
-    background-color: #FFF748;
-    width: 70%;
+    /* box-shadow: 2px 2px 15px 0 #e5e5e5; */
+    /* background-color: #FFF748; */
+    width: 60%;
     margin: 0 auto;
     margin-top: 2%;
     font-size: 20px;
     margin-bottom: 2%;
     padding: 10px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+/* sadiq css  */
+label {
+    width: 180px;
+    display: inline-block;
+    font-size: 16px;
+}
+.form_tag span {
+    font-size: 16px;
 }
 
-#name_input,
-#fName_input,
-#cnic_input,
-#age_input,
-#dob_input,
-#phone_input,
-#address_input,
-#email_input {
-    box-shadow: 2px 2px 15px 0 black;
+
+/* end  */
+#name_input, #fName_input, #cnic_input, #age_input, #dob_input, #phone_input, #address_input, #email_input {
+    /* box-shadow: 2px 2px 15px 0 black; */
     border: none;
-    width: 300px;
+    width: 70%;
     height: 30px;
+    border-bottom: 2px solid #3c1a5b;
 }
-
 input:focus {
     outline: none;
 }
 
-#address_input {
-    width: 300px;
-    height: 50px;
-}
 
 .admin_link {
     text-decoration: none;
@@ -76,17 +80,29 @@ input:focus {
     background-color: #3C1A5B;
     border: none;
     font-size: 20px;
+    color: #fff;
 }
 
-.admin_button {
+/* .admin_button {
     width: 30%;
     height: 50px;
     margin-left: 35%;
     background-color: #FFF748;
     border: none;
     font-size: 20px;
+} */
+.adimin {
+    text-align: right;
 }
-
+button.admin_button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: #3c1a5b !important;
+    font-family: 'poppins';
+    font-weight: 400;
+    cursor: pointer;
+}
 .submit_button:active {
     opacity: 50%;
 }
@@ -100,12 +116,11 @@ input:focus {
     -o-appearance: none;
     appearance: none;
     position: relative;
-    top: 8.33333px;
-    right: 0;
+    top: 3.33333px;
     bottom: 0;
-    left: 0;
-    height: 30px;
-    width: 30px;
+    left: 7px;
+    height: 20px;
+    width: 20px;
     transition: all 0.15s ease-out 0s;
     background: #cbd1d8;
     border: none;
@@ -117,7 +132,6 @@ input:focus {
     position: relative;
     z-index: 1000;
 }
-
 .option-input:hover {
     background: #9faab7;
 }
@@ -173,4 +187,17 @@ input:focus {
         margin-top: -80px;
         opacity: 0;
     }
+}
+
+
+@media screen and (max-width:600px) {
+    .main_page {
+
+        width: 95%;
+        margin: 10px;
+    }
+    #name_input, #fName_input, #cnic_input, #age_input, #dob_input, #phone_input, #address_input, #email_input {
+        width: 100%;
+    }
+    
 }
