@@ -23,9 +23,12 @@ body {
 }
 
 .sign_in {
-    background-color: #FFF748;
+    /* background-color: #FFF748; */
+    background-color: #ffffff;
     width: 40%;
     margin: 0 auto;
+    border-radius: 10px;
+    border: solid 2px #ddd;
     margin-top: 2%;
     font-size: 20px;
     margin-bottom: 2%;
@@ -33,12 +36,14 @@ body {
 }
 
 input {
-    box-shadow: 2px 2px 15px 0 black;
     border: none;
-    width: 100%;
+    width: 70%;
     height: 30px;
+    border-bottom: 2px solid #3c1a5b;
 }
-
+input:focus{
+    border: none !important;
+}
 .admin_form {
     margin: 0 auto;
     width: 50%;
@@ -48,9 +53,10 @@ input {
 .sign_button {
     width: 50%;
     height: 50px;
-    margin-left: 15%;
-    margin-bottom: 2%;
-    background-color: #3C1A5B;
+    margin-left: 25%;
+    margin-top: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
     border: none;
     font-size: 20px;
 }
